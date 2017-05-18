@@ -64,6 +64,20 @@ public:
     RelationType ComparedTo( CardType ) const;
 
     /**
+     * @brief  takes a date tm object and number of days in future. Returns true
+     *         if the objects anniversary date is within requested window.
+     * @return true if anniversary in window
+     */
+    bool CompareAnniversary( std::tm, int ) const;
+
+    /**
+     * @brief  takes a date tm object and number of days in future. Returns true
+     *         if the objects birthday date is within requested window.
+     * @return true if birthday is in window
+     */
+    bool CompareBirthday( std::tm, int ) const;
+
+    /**
      * @brief prints the address card to the screen.
      */
     void Print( std::ostream& ) const;
