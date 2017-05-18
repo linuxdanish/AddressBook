@@ -27,6 +27,12 @@ public:
     void SetName( std::string );
 
     /**
+     * @brief  gets the name in the card
+     * @return string of the name
+     */
+    std::string GetName();
+
+    /**
      * @brief sets the street, city, state, and zip of the cardtype
      * @param street address like so: 1600 pennsylvania ave
      * @param city, state, zip each separated by space.

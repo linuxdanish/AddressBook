@@ -23,6 +23,13 @@ void CardType::SetName( string fullName )
     nameStream >> fName >> lName;
 }
 
+string CardType::GetName()
+{
+    string name;
+    name = fName + " " + lName;
+    return name;
+}
+
 void CardType::SetAddress( string strAddress, string cityStZip )
 {
     streetName = strAddress;
