@@ -106,17 +106,22 @@ void AddressBook::UpdateCard()
             cin.clear();
             cin.get();
 
+            string newName;
+            string address;
+            string cityStZip;
+            string phone;
+            string annDate;
+            string birthDate;
+
+
             switch( choice )
             {
                 case 1: // update name
-                    string newName;
                     cout << "Please enter the new name: ";
                     getline( cin, newName );
                     updatedCard.SetName( newName );
                     break;
                 case 2: // update the address
-                    string address;
-                    string cityStZip;
                     cout << "Please enter the street address:";
                     getline( cin, address );
                     cout << "Please enter the city, state, and zip separated by"
@@ -125,22 +130,19 @@ void AddressBook::UpdateCard()
                     updatedCard.SetAddress( address, cityStZip );
                     break;
                 case 3: // update phone number
-                    string phone;
                     cout << "Please enter the new phone number:";
                     getline( cin, phone );
                     updatedCard.SetPhone( phone );
                     break;
-                case 4: // update anniversary date
-                    string date;
-                    cout << "Please enter new date in DD-MM-YYYY format:";
-                    getline( cin, date );
-                    updatedCard.SetAnniversary( date );
+                case 4: // update anniversary annDate
+                    cout << "Please enter new annDate in DD-MM-YYYY format:";
+                    getline( cin, annDate );
+                    updatedCard.SetAnniversary( annDate );
                     break;
-                case 5: // update birthday date
-                    string birthdate;
-                    cout << "Please enter new date in DD-MM-YYYY format:";
-                    getline( cin, birthdate );
-                    updatedCard.SetBirthday( birthdate );
+                case 5: // update birthday annDate
+                    cout << "Please enter new annDate in DD-MM-YYYY format:";
+                    getline( cin, birthDate );
+                    updatedCard.SetBirthday( birthDate );
                     break;
             }
 
@@ -173,13 +175,13 @@ void AddressBook::PrintCard()
     {
         // print header
         cout << "Begin Card:" << endl;
-        cout << setfill( "#" ) << setw( 80 ) << "#" << setfill( " " ) << endl;
+        cout << setfill( '#' ) << setw( 80 ) << "#" << setfill( ' ' ) << endl;
 
         // print card
         toPrint.Print( cout );
 
         // print footer
-        cout << setfill( "#" ) << setw( 80 ) << "#" << setfill( " " ) << endl;
+        cout << setfill( '#' ) << setw( 80 ) << "#" << setfill( ' ' ) << endl;
     }
     else
     {
@@ -228,10 +230,11 @@ void AddressBook::GenBirthCards()
         cin.clear();
         cin.get();
 
+        string name;
+
         switch( choice )
         {
             case 1: // specific person
-                string name;
                 bool found;
 
                 cout << "Which contact do you want to make a card for? "
@@ -309,12 +312,12 @@ void AddressBook::GenAnnCards()
         cin.clear();
         cin.get();
 
+        string name;
+        bool found;
+
         switch( choice )
         {
             case 1: // specific person
-                string name;
-                bool found;
-
                 cout << "Which contact do you want to make a card for? "
                      << "(fistName lastName): " << endl;
                 getline( cin, name );
