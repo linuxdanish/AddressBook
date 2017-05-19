@@ -396,7 +396,6 @@ void AddressBook::LoadBook()
     string inputString;
     string tempString;
 
-
     cout << "Name of file to load: ";
     getline( cin, fileName );
     openFile.open( fileName );
