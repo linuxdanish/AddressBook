@@ -183,15 +183,15 @@ void CardType::Print( ostream &stream ) const
     stream << setw(13) << ": " << city << " " << state << " " << zip << endl;
     stream << setw(13) << "Phone: " << phone << endl;
     stream << setw(13) << "Anniversary: " << anniversary.tm_mday
-                                          << "/"
+                                          << "-"
                                           << anniversary.tm_mon
-                                          << "/"
+                                          << "-"
                                           << anniversary.tm_year
                                           << endl;
     stream << setw(13) << "Birthday: " << birthday.tm_mday
-                                       << "/"
+                                       << "-"
                                        << birthday.tm_mon
-                                       << "/"
+                                       << "-"
                                        << birthday.tm_year
                                        << endl;
 }

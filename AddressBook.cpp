@@ -410,10 +410,12 @@ void AddressBook::LoadBook()
         string lineKey;
         string lineVal;
 
-        tempStream >> lineKey >> lineVal;
+        tempStream >> lineKey;
+        getline( tempStream, lineVal );
 
         if( lineKey == "Name:") // detect and set name
         {
+
             tempCard.SetName( lineVal );
         }
         else if( lineKey == "Address:" )
@@ -440,5 +442,5 @@ void AddressBook::LoadBook()
             addressBook.PutItem( tempCard );
         }
     }
-
+    cout << "File loaded" << endl;
 }

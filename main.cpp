@@ -21,6 +21,7 @@ int main()
 
     do
     {
+        cout << endl;
         cout << setw( 80 ) << setfill( '#' ) << "#" << setfill( ' ' ) << endl;
         cout << "Please make a selection from the menu (select number):\n"
              << "1: Enter a new name into the address book\n"
