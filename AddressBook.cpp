@@ -435,16 +435,10 @@ void AddressBook::LoadBook()
         else if( lineKey == "Birthday:" )
         {
             tempCard.SetBirthday( lineVal );
-        }
-        else
-        {
-            /** since we know a blank line is inserted after output of each
-             *  card, we can use it to submit the tempCard to the list.
-             *  This allows us to loop again and create the next card.
-             */
+            // Since we know that this is the last line
+            // we go ahead and submit the card
             addressBook.PutItem( tempCard );
         }
-
     }
 
 }
