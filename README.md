@@ -28,3 +28,5 @@ It consist of the following files:
 * AddressBook.h main AddressBook Class.
 * AddressBook.cpp: Implementation file for AddressBook Class. 
 * main.cpp: Main driver program.
+* addressbook.md: some sample data to test the list with.
+* README.md: the readme file...
