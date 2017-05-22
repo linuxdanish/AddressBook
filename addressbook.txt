@@ -1,0 +1,25 @@
+       Name: albert artist
+    Address: 432 woodland dr
+           : franklin VA 23487
+      Phone: 4046548976
+Anniversary: 06-05-2005
+   Birthday: 25-05-1991
+       Name: blake asbenson
+    Address: 123 washington street
+           : anytown TX 54328
+      Phone: 5655432123
+Anniversary: 20-05-2008
+   Birthday: 24-05-1996
+       Name: blake brighton
+    Address: 456 main street
+           : someplace NC 87654
+      Phone: 9873454321
+Anniversary: 01-06-2010
+   Birthday: 01-06-2001
+       Name: charlie bigsby
+    Address: 45 newtown ave
+           : minneapolis MN 54387
+      Phone: 8783451234
+Anniversary: 27-05-1986
+   Birthday: 28-05-2016
+
